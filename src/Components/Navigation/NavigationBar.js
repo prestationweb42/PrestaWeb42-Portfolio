@@ -9,7 +9,7 @@ import "./NavigationBar.css";
 
 function createLinks() {
     return navLinks.map((e, idx) => (
-        <Nav.Link className="mx-1 p-3" key={idx} href={e.ref}>
+        <Nav.Link className="mx-2 p-2" key={idx} href={e.ref}>
             {e.nom}
         </Nav.Link>
     ));
