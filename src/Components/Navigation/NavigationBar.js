@@ -1,15 +1,15 @@
 import React from "react";
-import "./NavigationBar.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { navLinks } from "../../Helpers/navLinks";
 import { subLinks } from "../../Helpers/subLinks";
+import "./NavigationBar.css";
 
 function createLinks() {
     return navLinks.map((e, idx) => (
-        <Nav.Link key={idx} href={e.ref}>
+        <Nav.Link className="mx-1 p-3" key={idx} href={e.ref}>
             {e.nom}
         </Nav.Link>
     ));
@@ -22,16 +22,16 @@ function createSubLinks() {
                 {e.nom}
             </NavDropdown.Item>
         ),
-        (<NavDropdown.Divider />)
+        <NavDropdown.Divider />
     );
 }
 
 function NavigationBar() {
     return (
         <div id="home">
-            <Navbar bg="light" expand="lg">
+            <Navbar expand="xl" className="navigation__container">
                 <Container>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="#home">Prestation Web 42</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">

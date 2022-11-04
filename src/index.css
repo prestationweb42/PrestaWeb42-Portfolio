@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* === root/html === */
+:root {
+    /* palette couleur */
+    --nav-color: hsl(210, 11%, 15%);
+    --nav-color-hover: hsl(210, 11%, 45%);
+    --nav-border-color: hsl(210, 11%, 45%);
+    --light-color: hsl(209, 100%, 92%);
+    --font-color: hsl(0, 0%, 100%);
+    --font-color-hover: hsl(0, 0%, 40%);
+    /*-----------------*/
+    --full-white: #fff;
+    --main-white: #f1f1f1;
+    --shade-white: #b7b7b7;
+    --full-black: #000000;
+    --main-black: #333;
+    --main-gray: #aaa;
+    --main-shadow: #292929;
+    --dark-yellow: #f4cb38;
+    --amazon-orange-star: #ffa41c; /* Stars */
+    --amazon-orange-dark: #c45500; /* Encart */
+    --amazon-yellow: #f7ca00; /* BTN */
+    --amazon-orange: #fa8900; /* BTN */
+    --amazon-green: #228b22; /* BTN */
+
+    /* Fonts */
+    --font-title: Kaushan Script, serif;
+    --font-base: Lato, sans-serif;
+
+    /* Font-size */
+    --size-navbar-brand: calc(2.2rem + 2.5vw);
+    --size-title: calc(2rem + 3.5vw);
+    --size-sub-title: calc(0.5rem + 2vw);
+    --size-section-title: calc(1.5rem + 2vw);
+    --size-navlink: calc(0.7rem + 1vw);
+    --size-p: calc(0.2rem + 1vw);
+    --text-sm: 1.4rem;
+    --text-base: 1.6rem;
+    --text-md: 1.8rem;
+    --text-lg: 2rem; /* 20px */
+    --text-xl: 2.4rem; /* 24px */
+    --text-2xl: 3rem; /* 30px */
+    --text-3xl: 3.6rem;
+    --text-4xl: 4.2rem;
+    --text-5xl: 5rem;
+    --text-6xl: 6rem;
+    --text-7xl: 7.2rem;
+
+    /* Spacing */
+    --space-1: 0.1rem;
+    --space-2: 0.2rem;
+    --space-4: 0.4rem;
+    --space-6: 0.6rem;
+    --space-8: 0.8rem;
+    --space-10: 1rem;
+    --space-12: 1.2rem;
+    --space-16: 1.6rem;
+    --space-20: 2rem;
+    --space-28: 2.8rem;
+    --space-36: 3.6rem;
+    --space-44: 4.4rem;
+    --space-52: 5.2rem;
+    --space-60: 6rem;
+    --space-72: 7.2rem;
+    --space-84: 8.4rem;
+    --space-96: 9.6rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    /* font-family: "Lato", sans-serif; */
 }
+
+

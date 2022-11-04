@@ -1,3 +1,32 @@
-.navigationBar h1 {
-    color: red;
+/** Css Navbar **/
+.navigation__container {
+    /* min-height: 100px; */
+    background-color: var(--nav-color);
+}
+.navbar-brand {
+    color: var(--font-color) !important;
+    font-size: var(--text-3xl) !important;
+    padding: var(--space-28) 0 !important;
+}
+.nav-link {
+    color: var(--font-color) !important;
+    font-size: var(--text-md) !important;
+    border-radius: 10px;
+}
+.nav-link:hover {
+    background-color: var(--font-color-hover);
+}
+.navbar-toggler-icon {
+    filter: invert(1);
+    font-size: var(--text-lg) !important;
+}
+/* responsive */
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        font-size: var(--text-xl) !important;
+        padding: var(--space-10) 0 !important;
+    }
+    .navbar-toggler-icon {
+        font-size: var(--text-md) !important;
+    }
 }
