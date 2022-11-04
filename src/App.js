@@ -1,4 +1,5 @@
 import NavigationBar from "./Components/Navigation/NavigationBar";
+import Header from "./Components/Header/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Particles from "./Components/Particles";
@@ -7,6 +8,7 @@ function App() {
     return (
         <div className="App">
             <NavigationBar />
+            <Header />
             <Particles
                 id="tsparticles"
                 options={{
