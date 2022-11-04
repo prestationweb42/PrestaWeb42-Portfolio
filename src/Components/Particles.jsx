@@ -1,5 +1,4 @@
 import React from "react";
-
 export default class Particles extends React.Component {
     componentDidMount() {
         this.generateParticles();
@@ -11,12 +10,12 @@ export default class Particles extends React.Component {
         canvas.width = document.documentElement.clientWidth;
         canvas.height = document.documentElement.clientHeight;
 
-        let num = 200;
+        let num = 150;
         let size = 1;
         let color = "#fff";
         let min_speed = 0.1;
         let max_speed = 0.5;
-        let line_distance = 150;
+        let line_distance = 80;
         let particles = [];
 
         const distance = (pointA, pointB) => {
