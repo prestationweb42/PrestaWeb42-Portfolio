@@ -1,7 +1,7 @@
 export const subLinks = [
     {
-        nom: "ACTION",
-        ref: "#action",
+        nom: "ABOUTME",
+        ref: "#about-me",
     },
     {
         nom: "REACTION",

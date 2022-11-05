@@ -3,6 +3,7 @@ import Header from "./Components/Header/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Particles from "./Components/Particles";
+import AboutMe from "./Components/AboutMe/AboutMe";
 
 function App() {
     return (
@@ -67,6 +68,7 @@ function App() {
                     },
                 }}
             />
+            <AboutMe />
         </div>
     );
 }

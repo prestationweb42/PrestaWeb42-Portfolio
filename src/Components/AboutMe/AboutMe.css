@@ -1,0 +1,47 @@
+#about-me {
+    min-height: 90vh;
+    padding: var(--space-44) 0;
+}
+#about-me .container {
+    min-height: 90vh;
+}
+#about-me .cols {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me img {
+    width: 300px;
+    height: auto;
+    border: 0.5px solid var(--main-gray);
+    border-radius: 50%;
+}
+#about-me h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--text-3xl);
+    font-family: var(--font-title);
+}
+#about-me p {
+    font-size: var(--text-lg);
+    font-family: var(--font-base);
+}
+
+/* Responsive about-me */
+@media screen and (max-width: 576px) {
+    #about-me img {
+        width: 250px;
+        height: auto;
+    }
+    #about-me h1 {
+        font-size: var(--text-xl);
+        padding: var(--space-10) 0;
+    }
+    #about-me p {
+        text-align: justify;
+        font-size: var(--text-md);
+    }
+}
