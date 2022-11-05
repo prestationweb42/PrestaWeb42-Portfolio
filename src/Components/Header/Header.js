@@ -14,29 +14,19 @@ function Header() {
                 }}
                 onInit={(typewriter) => {
                     typewriter
-                        .typeString("Hello toto")
-                        .pauseFor(1000)
+                        .typeString("A software Engneer")
+                        .pauseFor(2000)
                         .deleteAll();
                     typewriter
-                        .typeString("Bonjour tout le monde")
+                        .typeString("Front-end Developer")
                         .pauseFor(2000)
                         .deleteAll()
-                        .start();
-                }}
-            />
-            <Typewriter
-                options={{
-                    autoStart: true,
-                    loop: true,
-                    delay: 40
-                }}
-                onInit={(typewriter) => {
                     typewriter
-                        .typeString("Hello toto")
-                        .pauseFor(1000)
-                        .deleteAll();
+                        .typeString("Web Designer")
+                        .pauseFor(2000)
+                        .deleteAll()
                     typewriter
-                        .typeString("Bonjour tout le monde")
+                        .typeString("SEO")
                         .pauseFor(2000)
                         .deleteAll()
                         .start();
