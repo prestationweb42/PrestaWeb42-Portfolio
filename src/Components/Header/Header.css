@@ -1,5 +1,6 @@
 .typeWriter {
-    font-size: 25px;
+    font-size: var(--text-2xl);
+    font-family: var(--font-base);
     color: var(--font-color);
     position: absolute;
     top: 0;
@@ -10,5 +11,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 1;
+}
+.typeWriter h1{
+    font-size: var(--text-3xl);
+    font-family: var(--font-title);
+}
+
+@media screen and (max-width: 576px) {
+    
+    .typeWriter {
+        font-size: var(--text-xl);
+
+    }
+    .typeWriter h1{
+    font-size: var(--text-2xl);
+}
 }

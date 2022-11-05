@@ -29,7 +29,8 @@ function createSubLinks() {
 function NavigationBar() {
     return (
         <div id="home">
-            <Navbar expand="xl" className="navigation__container">
+            <Navbar expand="xl" collapseOnSelect className="navigation__container fixed-top">
+                
                 <Container>
                     <Navbar.Brand href="#home">Prestation Web 42</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
