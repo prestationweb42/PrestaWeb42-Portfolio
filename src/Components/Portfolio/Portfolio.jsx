@@ -1,12 +1,15 @@
 import React from "react";
 import person from "../../images/person.png";
 import "./Portfolio.css";
+import portfolioData from "./portfolioData";
 
 const Portfolio = () => {
     return (
         <section className="container-fluid" id="portfolio">
             <div className="container d-flex align-items-center">
                 <div className="row">
+                        <h1>Portfolio</h1>
+                        <h1>Voici mon GitHub</h1>
                     <div className="cols col-lg-6">
                         <img src={person} alt="personne icone" />
                     </div>
