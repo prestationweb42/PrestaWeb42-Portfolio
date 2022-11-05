@@ -1,32 +1,26 @@
 #technologies {
-    min-height: 90vh;
-    padding: var(--space-44) 0;
-}
-#technologies .container {
-    min-height: 90vh;
-}
-#technologies .cols {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    min-height: auto;
+    padding: 120px 0;
 }
 
-#technologies img {
-    width: 300px;
-    height: auto;
-    border: 0.5px solid var(--main-gray);
-    border-radius: 50%;
-}
 #technologies h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: var(--text-3xl);
     font-family: var(--font-title);
 }
+
+#technologies .tech__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: var(--space-10);
+}
+
 #technologies p {
-    font-size: var(--text-lg);
+    font-size: var(--text-xl);
     font-family: var(--font-base);
 }
 
