@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import "../Header/Header.css";
+import "./Header.css";
 
 function Header() {
     return (
