@@ -6,11 +6,13 @@
 .navbar-brand {
     color: var(--font-color) !important;
     font-size: var(--text-3xl) !important;
+    font-family: var(--font-Brand);
     padding: var(--space-28) 0 !important;
 }
 .nav-link {
     color: var(--font-color) !important;
     font-size: var(--text-md) !important;
+    font-family: var(--font-title);
     border-radius: 10px;
 }
 .nav-link:hover {

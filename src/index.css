@@ -28,8 +28,9 @@
     --amazon-green: #228b22; /* BTN */
 
     /* Fonts */
-    --font-title: Kaushan Script, serif;
-    --font-base: Lato, sans-serif;
+    --font-Brand: 'Kaushan Script', cursive;
+    --font-title: 'Montserrat', sans-serif;
+    --font-base: 'Source Sans Pro', sans-serif;
 
     /* Font-size */
     --size-navbar-brand: calc(2.2rem + 2.5vw);
