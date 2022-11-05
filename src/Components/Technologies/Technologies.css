@@ -15,8 +15,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
     margin: var(--space-10);
+    transition: transform 0.3s ease-in-out;
+}
+#technologies .tech__cards:hover{
+    transform: translateY(-5px);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+#technologies .tech__icon {
+    width: 70%;
 }
 
 #technologies p {
@@ -26,9 +39,11 @@
 
 /* Responsive technologies */
 @media screen and (max-width: 576px) {
-    #technologies img {
-        width: 250px;
-        height: auto;
+    #technologies .tech__cards {
+    width: 200px;
+}
+    #technologies .tech__icon {
+        width: 40%;
     }
     #technologies h1 {
         font-size: var(--text-xl);

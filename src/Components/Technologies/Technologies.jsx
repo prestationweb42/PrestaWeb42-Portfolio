@@ -12,7 +12,7 @@ const Technologies = () => {
                     {techs.map((e, idx) => {
                         return (
                             <div className="tech__cards col-sm-4 col-lg-2">
-                                <DevIcon icon={e.iconName} />
+                                <DevIcon icon={e.iconName} className="tech__icon" />
                                 <p>{e.nom}</p>
                             </div>
                         );
