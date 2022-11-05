@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Particles from "./Components/Particles";
 import AboutMe from "./Components/AboutMe/AboutMe";
+import Technologies from "./Components/Technologies/Technologies";
 
 function App() {
     return (
@@ -69,6 +70,7 @@ function App() {
                 }}
             />
             <AboutMe />
+            <Technologies />
         </div>
     );
 }
