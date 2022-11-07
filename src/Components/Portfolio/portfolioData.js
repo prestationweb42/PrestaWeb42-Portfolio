@@ -2,49 +2,49 @@ import chat from "./projectsicon/9chat.gif";
 import touringnat from "./projectsicon/touringnat.gif";
 import calc from "./projectsicon/calc.png";
 import map from "./projectsicon/map.png";
-import spartikus from "./projectsicon/spartikus.png";
+import generative_art from "./projectsicon/generative_art.png";
 import todos from "./projectsicon/todos.png";
 
 const portfolioData = [
     {
         image: chat,
         link: "https://google.fr",
-        desc: "desc one",
+        title: "title one",
         summary: "an app using firebase",
         tech: "react",
     },
     {
         image: touringnat,
         link: "https://google.fr",
-        desc: "desc two",
+        title: "title two",
         summary: "an app using HTML",
         tech: "React | Redux",
     },
     {
         image: calc,
         link: "https://google.fr",
-        desc: "desc three",
+        title: "title three",
         summary: "an app using HTML",
         tech: "HTML | CSS | JS",
     },
     {
         image: map,
         link: "https://google.fr",
-        desc: "desc four",
+        title: "title four",
         summary: "an app using PHP",
         tech: "PHP",
     },
     {
-        image: spartikus,
+        image: generative_art,
         link: "https://google.fr",
-        desc: "desc five",
+        title: "title five",
         summary: "an app using Symfony",
         tech: "Symfony",
     },
     {
         image: todos,
         link: "https://google.fr",
-        desc: "desc six",
+        title: "title six",
         summary: "an app using Bootstrap",
         tech: "Bootstrap",
     },

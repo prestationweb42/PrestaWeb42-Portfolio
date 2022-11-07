@@ -1,22 +1,8 @@
 #portfolio {
-    min-height: 90vh;
-    padding: var(--space-44) 0;
-}
-#portfolio .container {
-    min-height: 90vh;
-}
-#portfolio .card {
-    border: none;
+    min-height: auto;
+    padding: 150px 0;
 }
 
-#portfolio img {
-    /* display: block; */
-    width: 70%;
-    margin: var(--space-10) auto;
-    /* height: auto; */
-    /* border: 0.5px solid var(--main-gray); */
-    /* border-radius: 50%; */
-}
 #portfolio h1 {
     text-align: center;
     text-transform: uppercase;
@@ -31,28 +17,85 @@
     padding: var(--space-20) 0;
 }
 #portfolio h2 a {
+    display: block;
     text-decoration: none;
-    text-align: center;
     font-size: var(--text-xl);
     font-family: var(--font-base);
 }
-#portfolio p {
-    color: black;
+
+/* Setting Card */
+.portfolio__card__container {
+    width: 50%;
+    position: relative;
+    border: none;
+    padding: var(--space-10);
+}
+
+.portfolio__card__image {
+    width: 100%;
+    transition: filter 0.2s ease-in-out;
+}
+.portfolio__card__image:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+    transition: filter 0.2s ease-in-out;
+}
+
+.portfolio__click__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--font-color);
+    font-size: 100px;
+    display: none;
+}
+
+.portfolio__card__image:hover + .portfolio__click__info {
+    display: block;
+    opacity: 0.8;
+}
+
+/* Setting Modal */
+.portfolio__modal__title {
     text-align: center;
+    text-transform: uppercase;
+    font-size: var(--text-xl);
+    color: var(--full-black);
+}
+.portfolio__modal__summary,
+.portfolio__modal__tech{
     font-size: var(--text-lg);
-    font-family: var(--font-base);
+
+}
+
+.portfolio__modal__link {
+    font-size: var(--text-md);
+    text-decoration: none;
 }
 
 /* Responsive portfolio */
+@media screen and (max-width: 1200px) {
+    .portfolio__card__container {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .portfolio__card__container {
+        width: 70%;
+    }
+}
 @media screen and (max-width: 768px) {
-#portfolio img {
-        width: 95%;
+    .portfolio__card__container {
+        width: 90%;
     }
 }
 @media screen and (max-width: 576px) {
-    #portfolio img {
+    #portfolio {
+        padding: 70px 0;
+    }
+    .portfolio__card__container {
         width: 90%;
-        height: auto;
     }
     #portfolio h1 {
         font-size: var(--text-xl);
@@ -63,8 +106,9 @@
         padding: var(--space-20) 0;
         text-align: center;
     }
-    #portfolio p {
-        text-align: justify;
+    #portfolio h2 a {
         font-size: var(--text-md);
+        padding: var(--space-20) 0;
+        text-align: center;
     }
 }
