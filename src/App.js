@@ -6,6 +6,7 @@ import Particles from "./Components/Particles";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Technologies from "./Components/Technologies/Technologies";
 import Portfolio from "./Components/Portfolio/Portfolio";
+import Contact from "./Components/ContactMe/ContactMe";
 
 function App() {
     return (
@@ -73,6 +74,7 @@ function App() {
             <AboutMe />
             <Technologies />
             <Portfolio />
+            <Contact />
         </div>
     );
 }
