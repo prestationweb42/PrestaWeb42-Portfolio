@@ -1,6 +1,4 @@
-import React from "react";
-import person from "../../images/person.png";
-import "./Portfolio.css";
+import React, { useState } from "react";
 import portfolioData from "./portfolioData";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -8,8 +6,32 @@ import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 import { Modal } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import "./Portfolio.css";
 
 const Portfolio = () => {
+    const [modalShow, setModalShow] = useState(false);
+    const [tempData, setTempData] = useState({});
+
+    const showModal = portfolioData.map((e, idx) => {
+        return (
+            <Card key={idx}>
+                <Image
+                    onClick={() => {
+                        setTempData({
+                            image: e.image,
+                            link: e.link,
+                            desc: e.desc,
+                            summary: e.summary,
+                            tech: e.tech,
+                        });
+                        setModalShow(true);
+                    }}
+                    src={e.image}
+                />
+            </Card>
+        );
+    });
+
     return (
         <section className="container-fluid" id="portfolio">
             <div className="container d-flex align-items-center">
@@ -25,27 +47,10 @@ const Portfolio = () => {
                             https://github.com/prestationweb42
                         </a>
                     </h2>
-                    <div className="cols col-lg-6">
-                        <img src={person} alt="personne icone" />
-                    </div>
-                    <div className="cols col-lg-6">
-                        <h1>About me</h1>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Dolorum fugit maxime officiis repudiandae
-                            inventore beatae vitae? Praesentium asperiores
-                            quidem soluta dolores repellendus rem ullam ipsum
-                            illo sequi ut facere veritatis mollitia molestias,
-                            similique neque atque eaque? Odio, nostrum pariatur
-                            laboriosam hic, debitis harum nihil eius quasi
-                            accusamus itaque blanditiis, iusto repudiandae
-                            expedita eveniet molestias. Quaerat libero voluptate
-                            rerum fuga a. Odio, nostrum pariatur laboriosam hic,
-                            debitis harum nihil eius quasi accusamus itaque
-                            blanditiis, iusto repudiandae expedita eveniet
-                            molestias. Quaerat libero voluptate rerum fuga a.
-                        </p>
-                    </div>
+                    {/* <Container fluid="lg"> */}
+                    <Container fluid="lg">
+                        <Row>{showModal}</Row>
+                    </Container>
                 </div>
             </div>
         </section>

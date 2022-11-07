@@ -5,19 +5,17 @@
 #portfolio .container {
     min-height: 90vh;
 }
-#portfolio .cols {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#portfolio .card {
+    border: none;
 }
 
 #portfolio img {
-    width: 300px;
-    height: auto;
-    border: 0.5px solid var(--main-gray);
-    border-radius: 50%;
+    /* display: block; */
+    width: 70%;
+    margin: var(--space-10) auto;
+    /* height: auto; */
+    /* border: 0.5px solid var(--main-gray); */
+    /* border-radius: 50%; */
 }
 #portfolio h1 {
     text-align: center;
@@ -30,7 +28,7 @@
     text-align: center;
     font-size: var(--text-xl);
     font-family: var(--font-base);
-    padding: var(--space-20 ) 0;
+    padding: var(--space-20) 0;
 }
 #portfolio h2 a {
     text-decoration: none;
@@ -46,9 +44,14 @@
 }
 
 /* Responsive portfolio */
+@media screen and (max-width: 768px) {
+#portfolio img {
+        width: 95%;
+    }
+}
 @media screen and (max-width: 576px) {
     #portfolio img {
-        width: 200px;
+        width: 90%;
         height: auto;
     }
     #portfolio h1 {
@@ -56,10 +59,10 @@
         padding: var(--space-10) 0;
     }
     #portfolio h2 {
-    font-size: var(--text-md);
-    padding: var(--space-20 ) 0;
-    text-align: center;
-}
+        font-size: var(--text-md);
+        padding: var(--space-20) 0;
+        text-align: center;
+    }
     #portfolio p {
         text-align: justify;
         font-size: var(--text-md);

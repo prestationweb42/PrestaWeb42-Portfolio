@@ -12,7 +12,7 @@ function App() {
         <div className="App">
             <NavigationBar />
             <Header />
-            <Particles
+            {/* <Particles
                 id="tsparticles"
                 options={{
                     background: {
@@ -69,7 +69,7 @@ function App() {
                         },
                     },
                 }}
-            />
+            /> */}
             <AboutMe />
             <Technologies />
             <Portfolio />

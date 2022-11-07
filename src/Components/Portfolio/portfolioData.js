@@ -1,4 +1,5 @@
 import chat from "./projectsicon/9chat.gif";
+import touringnat from "./projectsicon/touringnat.gif";
 import calc from "./projectsicon/calc.png";
 import map from "./projectsicon/map.png";
 import spartikus from "./projectsicon/spartikus.png";
@@ -13,30 +14,37 @@ const portfolioData = [
         tech: "react",
     },
     {
-        image: calc,
+        image: touringnat,
         link: "https://google.fr",
         desc: "desc two",
+        summary: "an app using HTML",
+        tech: "React | Redux",
+    },
+    {
+        image: calc,
+        link: "https://google.fr",
+        desc: "desc three",
         summary: "an app using HTML",
         tech: "HTML | CSS | JS",
     },
     {
         image: map,
         link: "https://google.fr",
-        desc: "desc three",
+        desc: "desc four",
         summary: "an app using PHP",
         tech: "PHP",
     },
     {
         image: spartikus,
         link: "https://google.fr",
-        desc: "desc four",
+        desc: "desc five",
         summary: "an app using Symfony",
         tech: "Symfony",
     },
     {
         image: todos,
         link: "https://google.fr",
-        desc: "desc four",
+        desc: "desc six",
         summary: "an app using Bootstrap",
         tech: "Bootstrap",
     },
