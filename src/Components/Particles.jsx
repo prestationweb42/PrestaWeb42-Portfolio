@@ -10,12 +10,12 @@ export default class Particles extends React.Component {
         canvas.width = document.documentElement.clientWidth;
         canvas.height = document.documentElement.clientHeight;
 
-        let num = 150;
-        let size = 1;
+        let num = 250;
+        let size = 2;
         let color = "#fff";
-        let min_speed = 0.1;
-        let max_speed = 0.5;
-        let line_distance = 80;
+        let min_speed = 0.3;
+        let max_speed = 0.9;
+        let line_distance = 110;
         let particles = [];
 
         const distance = (pointA, pointB) => {
