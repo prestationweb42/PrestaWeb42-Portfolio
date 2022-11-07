@@ -2,14 +2,29 @@ import React from "react";
 import person from "../../images/person.png";
 import "./Portfolio.css";
 import portfolioData from "./portfolioData";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Card from "react-bootstrap/Card";
+import Image from "react-bootstrap/Image";
+import { Modal } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 const Portfolio = () => {
     return (
         <section className="container-fluid" id="portfolio">
             <div className="container d-flex align-items-center">
                 <div className="row">
-                        <h1>Portfolio</h1>
-                        <h1>Voici mon GitHub</h1>
+                    <h1>Portfolio</h1>
+                    <h2>
+                        Voici mon GitHub&nbsp;:&nbsp;
+                        <a
+                            href="https://github.com/prestationweb42"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            https://github.com/prestationweb42
+                        </a>
+                    </h2>
                     <div className="cols col-lg-6">
                         <img src={person} alt="personne icone" />
                     </div>
