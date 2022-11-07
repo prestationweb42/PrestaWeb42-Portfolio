@@ -29,6 +29,7 @@
     position: relative;
     border: none;
     padding: var(--space-10);
+    margin: auto;
 }
 
 .portfolio__card__image {
@@ -58,23 +59,32 @@
 
 /* Setting Modal */
 .portfolio__modal__title {
-    text-align: center;
     text-transform: uppercase;
     font-size: var(--text-xl);
+    font-family: var(--font-title);
     color: var(--full-black);
 }
 .portfolio__modal__summary,
-.portfolio__modal__tech{
+.portfolio__modal__tech {
     font-size: var(--text-lg);
-
+    font-family: var(--font-base);
 }
 
 .portfolio__modal__link {
     font-size: var(--text-md);
     text-decoration: none;
+    font-family: var(--font-base);
 }
 
-/* Responsive portfolio */
+.portfolio__modal__button {
+    width: 250px;
+    height: 50px;
+    font-size: var(--text-md);
+    font-family: var(--font-base);
+    margin: 0 auto;
+}
+
+/* Responsive portfolio / modal */
 @media screen and (max-width: 1200px) {
     .portfolio__card__container {
         width: 80%;
@@ -82,7 +92,7 @@
 }
 @media screen and (max-width: 992px) {
     .portfolio__card__container {
-        width: 70%;
+        width: 95%;
     }
 }
 @media screen and (max-width: 768px) {
@@ -110,5 +120,25 @@
         font-size: var(--text-md);
         padding: var(--space-20) 0;
         text-align: center;
+    }
+    /* Setting Modal */
+    .portfolio__modal__title {
+        font-size: var(--text-lg);
+    }
+    .portfolio__modal__button {
+        width: 160px;
+        height: 30px;
+        font-size: var(--text-sm);
+    }
+    .portfolio__modal__summary,
+    .portfolio__modal__tech {
+        font-size: var(--text-md);
+    }
+
+    .portfolio__modal__link {
+        font-size: var(--text-sm);
+    }
+    .portfolio__click__info {
+        font-size: 20px;
     }
 }

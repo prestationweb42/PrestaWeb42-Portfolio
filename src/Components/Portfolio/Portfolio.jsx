@@ -45,7 +45,12 @@ const Portfolio = () => {
                     </a>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={handleClose}>Fermer</Button>
+                    <Button
+                        className="portfolio__modal__button"
+                        onClick={handleClose}
+                    >
+                        Fermer
+                    </Button>
                 </Modal.Footer>
             </Modal>
         );
